@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจองที่นั่งในโรงหนัง</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="movie-container">
+        <label for="เลือกหนัง"></label>
+        <select name="" id="movie">
+            <option value="120">แมคเป็นหมาที่ดี ศึกล้างแค้น | 120 บาท</option>
+            <option value="150">เชฟติ๊กสู้ฟัด | 150 บาท</option>
+            <option value="80">The DickHead จับแทง ตะแคงที่ริมบึง | 80 บาท</option>
+        </select>
+    </div>
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>ว่าง</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>ที่นั่งของเรา</small>
+        </li><li>
+            <div class="seat occupied"></div>
+            <small>ไม่ว่าง</small>
+        </li>
+    </ul>
+    <div class="container">
+        <div class="screen"></div>
+        <!-- ที่นั่ง 6แถว แถวละ8ที่นั่ง-->
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+<!--
+    <p class="text">เลือกจำนวน</p>ยอดชำระเงิน<span id="total">0</span>
+-->
+    <p class="text">เลือกจำนวน
+        <span id="count">0</span> ที่นั่ง 
+        ยอดชำระเงิน<span id="total">0</span> บาท
+    </p>
+    <script src="script.js"></script>
+</body>
+</html>
